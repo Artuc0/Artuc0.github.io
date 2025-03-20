@@ -91,3 +91,17 @@ footer a:hover {
   #direito { order: 3; }
   footer  { order: 4; }
 }
+
+@media all and (max-width: 799px) {
+    #icon {
+        max-block-size: 30%;
+    }
+    header {
+        display: flex;
+        flex-flow: column wrap;
+        font-size: medium;
+    }
+    #fachada {
+        overflow: hidden;
+    }
+}
