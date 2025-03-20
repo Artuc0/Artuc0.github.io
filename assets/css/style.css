@@ -1,0 +1,93 @@
+/*O estilo do website é baseado em páginas dos anos 2000, a época que a Série Breaking Bad era ambientada
+* Não é uma estética bonita para os dias de hoje kkkk mas me deixei levar */
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to right, gold, orangered);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+    padding: 20px;
+}
+
+header div {
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+#icon {
+    height: 70%;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+main {
+    padding: 0 30px 0 30px;
+}
+
+section {
+    padding: 5px;
+}
+
+#esquerdo {
+    background-color: gold;
+    width: 150px;
+    overflow-wrap: break-word;
+}
+
+#fachada {
+    width: 280px;
+    flex-shrink: 5;
+}
+
+#direito {
+    background-color: ivory;
+    width: 200px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    color: white;
+    background-color: orangered;
+    font-weight: bold;
+}
+
+footer a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-shadow: 0px 0px 5px yellow;
+}
+
+@media all and (min-width: 600px) {
+  aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  main    { flex: 3 0px; }
+  #esquerdo { order: 1; } 
+  main    { order: 2; }
+  #direito { order: 3; }
+  footer  { order: 4; }
+}
